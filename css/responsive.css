@@ -97,11 +97,13 @@
         margin-left: 0px;
         font-size: 60px;
         width: 100%;
+        padding: 10px;
     }
     
     #section-sub-title {
         margin-left: 0px;
         font-size: 30px;
+        padding: 10px;
     }
     
     .grid-container {
