@@ -20,7 +20,7 @@ function isMobileView() {
       var hero_container = document.querySelector('.hero-container')
       var scale = 0.8;
       var duration = 1500;
-      var delay = 500;
+      var delay = 0;
 
       var hero_scale = 0.5
       
