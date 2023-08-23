@@ -180,7 +180,7 @@
     font-size: 10px;
     width: 100%; /* Adjust to your preference */
     margin: 0 auto;
-    padding-left: 130px;
+    padding-left: 90px;
     padding-bottom: 40px;
   }
   
@@ -344,6 +344,6 @@
       .hero-sub {
         position: absolute;
         text-align: center;
-        padding-left: 20vw;
+        padding-left: 10vw;
       }
   }
