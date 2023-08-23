@@ -186,7 +186,38 @@
   
   .skill {
     margin: 10px 0;
-    width: 100px;
+  }
+
+  .skill-1 {
+    width: 190px;
+  }
+
+  .skill-2 {
+    width: 180px;
+  }
+
+  .skill-3 {
+    width: 140px;
+  }
+
+  .skill-4 {
+    width: 168px;
+  }
+
+  .skill-5 {
+    width: 176px;
+  }
+
+  .skill-6 {
+    width: 180px;
+  }
+
+  .skill-7 {
+    width: 160px;
+  }
+
+  .skill-8 {
+    width: 196px;
   }
   
   .skill-name {
@@ -233,6 +264,86 @@
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+  @media only screen and (min-width: 1600px) {
+    #hero {
+        background-color: #fff;
+        text-align: center;
+        padding: 3vw;
+    }
+    
+    .zoom-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+    
+    
+    #hero h1 {
+        font-size: 80px;
+        font-family: 'SFPRODISPLAYREGULAR', sans-serif;
+        font-weight: 600;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    #hero-text h2 {
+        display: none;
+    }
+    
+    #hero-btn {
+        background-color: #0c7ced;
+        color: #fff;
+        border: none;
+        font-size: 25px;
+        border-radius: 40px;
+        padding: 16px;
+    }
+    
+    #hero-btn a {
+        text-decoration: none;
+    }
+    
+    #hero-btn a:visited {
+        color: #fff;
+    }
+    
+    .hero-image {
+        position: absolute;
+        width: 300px;
+        border-radius: 100%;
+        top: 0;
+        z-index: 3;
+      }
+    
+      .hero-name {
+        position: relative;
+        z-index: 4;
+        margin-top: 24vw;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    
+      .hero-title {
+        font-size: 80px;
+        font-weight: 600;
+      }
+    
+      .hero-main {
+        position: absolute;
+        left: 39%;
+        text-align: center;
+      }
+    
+      .hero-contact {
+        color: #016ddb;
+        font-size: 30px;
+      }
+    
+      .hero-sub {
+        position: absolute;
+        text-align: center;
+        padding-left: 20vw;
+      }
   }
