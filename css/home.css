@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 header h2 {
-    margin-right: 200px;
+    margin-right: 10vw;
     font-family: 'SFPRODISPLAYREGULAR', sans-serif;
     font-size: 20px;
     font-weight: 490;
@@ -55,7 +55,7 @@ header h2 {
 
 #contact-me {
     color: #016ddb;
-    padding-left: 200px;
+    padding-left: 10vw;
     padding-top: 4px;
 }
 
@@ -63,7 +63,7 @@ header h2 {
 #hero {
     background-color: #fff;
     text-align: center;
-    padding: 40px;
+    padding: 3vw;
 }
 
 .zoom-image {
@@ -79,8 +79,8 @@ header h2 {
     font-size: 80px;
     font-family: 'SFPRODISPLAYREGULAR', sans-serif;
     font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 #hero-text h2 {
@@ -115,7 +115,7 @@ header h2 {
   .hero-name {
     position: relative;
     z-index: 4;
-    margin-top: 340px;
+    margin-top: 24vw;
     font-size: 28px;
     font-weight: 500;
   }
