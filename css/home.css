@@ -188,17 +188,49 @@ header h2 {
   
   .skill {
     margin: 10px 0;
+  }
+
+  .skill-1 {
     width: 300px;
   }
+
+  .skill-2 {
+    width: 280px;
+  }
+
+  .skill-3 {
+    width: 200px;
+  }
+
+  .skill-4 {
+    width: 250px;
+  }
+
+  .skill-5 {
+    width: 260px;
+  }
+
+  .skill-6 {
+    width: 280px;
+  }
+
+  .skill-7 {
+    width: 220px;
+  }
+
+  .skill-8 {
+    width: 310px;
+  }
+
   
   .skill-name {
     display: flex;
-    font-weight: 600;
+    font-weight: 400;
   }
   
   .skill-level {
     border-radius: 40px;
-    background-color: #3498db;
+    background-color: #0c7ced;
     color: white;
     padding: 5px;
     text-align: right;
@@ -264,6 +296,7 @@ header h2 {
     text-align: center;
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease-in-out;
+    border: 2px solid #ffffff;
   }
 
   .grid-item:hover {
@@ -388,6 +421,24 @@ header h2 {
 
   #about-me-img {
     width: 400px;
+  }
+
+  /* blog */
+  .blog-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 40px;
+    padding: 40px;
+    row-gap: 40px;
+  }
+  .blog-grid-item {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease-in-out;
   }
 
   /* footer  */
