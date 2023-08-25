@@ -86,3 +86,27 @@ function zooming(loadingScale) {
     });
 
     showTestimonial(currentIndex);
+// Select all sections with the 'lazy' class
+const sections = document.querySelectorAll('section');
+
+// Configure the observer
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3 // Percentage of the section visible in the viewport
+};
+
+// Callback function when an observed section enters the viewport
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('lazy-load'); // Add the lazy-load class
+      observer.unobserve(entry.target); // Stop observing once loaded
+    }
+  });
+}, observerOptions);
+
+// Start observing each section
+sections.forEach(section => {
+  sectionObserver.observe(section);
+});

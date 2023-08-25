@@ -545,3 +545,19 @@ header h2 {
   footer p {
     padding: 20px 0px 0px 0px;
   }
+
+  /* lazy loading  */
+  
+  /* Set a default style for sections */
+section {
+    opacity: 0; /* Initially hide the sections */
+    transform: translateY(50px); /* Optionally, move sections down a bit */
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Class to trigger lazy loading effect */
+  .lazy-load {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
