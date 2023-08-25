@@ -4,6 +4,15 @@ body, h1, h2, h3, h4, p, ul, li, hr, section, img{
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* :root {
     --background-color: white;
     --text-color: black;
@@ -26,6 +35,7 @@ body, h1, h2, h3, h4, p, ul, li, hr, section, img{
 body {
     background-color: #f5f5f7;
     font-family: 'Inter', sans-serif;
+    display: none;
 }
 
 /* header  */
@@ -124,6 +134,10 @@ header h2 {
     color: #fff;
 }
 
+.resume-btn {
+    text-align: center;
+}
+
 .hero-image {
     position: absolute;
     width: 300px;
@@ -175,6 +189,48 @@ header h2 {
     animation: glow 3s infinite;
   }
 
+  /* about me  */
+  .about-me-container {
+    color: #fff;
+    margin: 20px;
+    border-radius: 40px;
+    padding: 40px 40px 0px 40px;
+    background: linear-gradient(45deg, #fb5a6a, #a665db);
+  }
+
+  .about-me-container h1 {
+    margin-top: 30%;
+    font-size: 40px;
+    font-weight: 490;
+
+  }
+
+  .about-me-grid-container {
+    background-color: #ffffff00;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+  }
+  .about-me-grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .about-me-grid-item p {
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  #about-me-img {
+    width: 400px;
+    height: 100%;
+  }
+
+
   /* skills section  */
 
   .skills-grid-container {
@@ -192,6 +248,7 @@ header h2 {
     text-align: center;
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease-in-out;
+    min-width: 40vw;
   }
 
   .skills-grid-img {
@@ -265,11 +322,10 @@ header h2 {
     font-size: 16px;
     text-align: center;
     padding-top: 100px;
-
   }
 
   .skills-chart-back {
-    background-image: url('../assets/img/Untitled\ design\ \(2\).png');
+    background-image: url('../assets/img/skills-background.png');
     background-size: cover;
     background-position: center;
   }
@@ -283,7 +339,7 @@ header h2 {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 300px;
+    margin-left: 20vw;
     font-size: 80px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -294,7 +350,7 @@ header h2 {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 310px;
+    margin-left: 21vw;
     font-size: 30px;
     font-weight: 490;
     font-family: 'Inter', sans-serif;
@@ -403,46 +459,6 @@ header h2 {
     color: #fff;
     z-index: -1;
   }
-
-  /* about me  */
-  .about-me-container {
-    color: #fff;
-    margin: 20px;
-    border-radius: 40px;
-    padding: 40px 40px 0px 40px;
-    background: linear-gradient(45deg, #fb5a6a, #a665db);
-  }
-
-  .about-me-container h1 {
-    margin-top: 30%;
-    font-size: 40px;
-    font-weight: 490;
-
-  }
-
-  .about-me-grid-container {
-    background-color: #ffffff00;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
-  }
-  .about-me-grid-item {
-    font-size: 30px;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .about-me-grid-item p {
-    font-weight: 200;
-    font-size: 20px;
-    padding: 10px 0px 10px 0px;
-  }
-
-  #about-me-img {
-    width: 400px;
-  }
-
   /* testmonials */
   #testimonials-section-title {
     padding: 8vw 20vw 0vw 20vw;
@@ -456,6 +472,7 @@ header h2 {
     }
 
     .testimonial {
+        height: 20vw;
         display: none;
         padding: 40px 10px;
         text-align: center;
@@ -467,7 +484,7 @@ header h2 {
         transition: opacity 0.5s ease-in-out;
         border: 0px solid;
         box-shadow: 5px 10px 8px #888888;
-        margin: 20px 200px;
+        margin: 20px 20vw;
     }
 
     .testimonial-img {

@@ -6,57 +6,61 @@
         max-width: 100%;
         overflow-x: hidden;
     }
+
+    body {
+        display: block;
+    }
     /* header  */
     nav {
         display: none;
     }
 
     /* hero section */
-#hero {
-    padding: 8vw;
-}
+    #hero {
+        padding: 8vw;
+    }
 
-.zoom-image {
-    display: none;
-  }
+    .zoom-image {
+        display: none;
+    }
 
 
-#hero h1 {
-    font-size: 40px;
-}
+    #hero h1 {
+        font-size: 40px;
+    }
 
-#hero-text h2 {
-    display: none;
-}
+    #hero-text h2 {
+        display: none;
+    }
 
-.hero-image {
-    position: static;
-    width: 200px;
-    margin-top: 20px;
-  }
+    .hero-image {
+        position: static;
+        width: 200px;
+        margin-top: 20px;
+    }
 
-  .hero-name {
-    position: static;
-    margin-top: 20px;
-    font-size: 28px;
-  }
+    .hero-name {
+        position: static;
+        margin-top: 20px;
+        font-size: 28px;
+    }
 
-  .hero-title {
-    display: none;
-  }
+    .hero-title {
+        display: none;
+    }
 
-  .hero-main {
-    position: static;
-  }
+    .hero-main {
+        position: static;
+    }
 
-  .hero-contact {
-    display: none;
-  }
+    .hero-contact {
+        display: none;
+    }
 
-  .hero-sub {
-    position: static;
-    text-align: center;
-  }
+    .hero-sub {
+        position: static;
+        text-align: center;
+    }
 
 
     /* about-me  */
@@ -99,7 +103,7 @@
 
   .skills-grid-container {
     grid-template-columns: auto;
-    padding: 20px;
+    padding: 4vw;
   }
   .skills-grid-item {
     padding: 0vw;
@@ -113,72 +117,190 @@
   .chart-container {
     font-size: 10px;
     margin: 0 auto;
-    padding-left: 24vw;
+    padding-left: 10vw;
     padding-bottom: 15vw;
+    max-width: 50vw;
+  }
+
+  .skill {
+    max-width: 50vw;
   }
 
   .skill-1 {
-    width: 190px;
+    width: 47.5vw;
   }
 
   .skill-2 {
-    width: 180px;
+    width: 45vw;
   }
 
   .skill-3 {
-    width: 140px;
+    width: 35vw;
   }
 
   .skill-4 {
-    width: 168px;
+    width: 42vw;
   }
 
   .skill-5 {
-    width: 176px;
+    width: 44vw;
   }
 
   .skill-6 {
-    width: 180px;
+    width: 45vw;
   }
 
   .skill-7 {
-    width: 160px;
+    width: 40vw;
   }
 
   .skill-8 {
-    width: 196px;
+    width: 49vw;
   }
 
   /* testimonials */
 
   .testimonial {
+    height: 300px;
     padding: 40px 0px;
     margin: 20px 10px;
 }
+
+/* blog  */
+.blog-grid-item {
+    padding: 0px;
+  }
+
+  .blog-grid-container {
+    padding: 20px;
+  }
 
   }
   
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+    body {
+        display: block;
+    }
 
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .example {background: blue;}
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 601px) {
+    .about-me-grid-container {
+        grid-template-columns: auto;
+      }
+
+      .about-me-grid-item {
+        text-align: center;
+      }
+
+      .skills-grid-container {
+        grid-template-columns: auto;
+      }
+    
+      .about-me-container h1 {
+        margin-top: 10%;
+      }
+    
+      .chart-container {
+        padding-left: 28vw;
+        padding-bottom: 10vw;
+        max-width: 50vw;
+      }
+
+      .skill-title {
+        padding-top: 12vw;
+      }
+
+      .grid-container {
+        grid-template-columns: auto auto ;
+      }
+
+      .testimonial {
+        height: min-content;
+    }
+
+
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
+  @media only screen and (min-width: 1000px) {
+    .skills-grid-container {
+        grid-template-columns: auto auto;
+      }
+
+      .chart-container {
+        padding-left: 8vw;
+        padding-bottom: 10vw;
+        max-width: 50vw;
+      }
+  }
+  @media only screen and (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+      }
+
+      .testimonial {
+        height: 20vw;
+    }
+
+    .about-me-grid-container {
+        grid-template-columns: auto auto;
+      }
+
+      .about-me-container h1 {
+        margin-top: 30%;
+      }
+
+      
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1600px) {  
+  @media only screen and (min-width: 1900px) {  
       .hero-sub {
-        position: absolute;
-        text-align: center;
-        padding-left: 10vw;
+        padding-left: 13vw;
+        padding-top: 2vw;
       }
+
+      .hero-image {
+        width: 24vw;
+      }
+
+      .chart-container {
+        padding-left: 13vw;
+        padding-bottom: 10vw;
+        max-width: 50vw;
+      }
+
+      .about-me-grid-item {
+        text-align: left;
+      }
+
+      #about-me-description {
+        font-size: 30px;
+      }
+
+      .about-me-container h1 {
+        margin-top: 16%;
+      }
+
+      .testimonial {
+        height: 13vw;
+        
+    }
+
+    #testimonials-section-title {
+        padding: 8vw 20vw 4vw 20vw;
+        font-size: 80px;
+      }
+
+
+
   }
