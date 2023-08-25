@@ -128,6 +128,7 @@ header h2 {
 
 #hero-btn a {
     text-decoration: none;
+    color: #fff;
 }
 
 #hero-btn a:visited {

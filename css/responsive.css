@@ -193,6 +193,22 @@
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 601px) {
+    nav {
+        display: none;
+    }
+
+    .hero-sub {
+        padding-top: 2vw;
+        padding-left: 0vw;
+      }
+
+      .hero-image {
+        width: 24vw;
+      }
+
+      .hero-title {
+        font-size: 60px;
+      }
     .about-me-grid-container {
         grid-template-columns: auto;
       }
@@ -232,6 +248,9 @@
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 1000px) {
+    nav {
+        display: block;
+    }
     .skills-grid-container {
         grid-template-columns: auto auto;
       }
@@ -240,6 +259,28 @@
         padding-left: 8vw;
         padding-bottom: 10vw;
         max-width: 50vw;
+      }
+
+      .about-me-grid-item {
+        text-align: left;
+      }
+
+      .hero-sub {
+        padding-top: 2vw;
+        padding-left: 0vw;
+      }
+
+      .hero-image {
+        width: 24vw;
+      }
+
+      .hero-title {
+        font-size: 60px;
+      }
+
+      #testimonials-section-title {
+        padding: 8vw 20vw 4vw 20vw;
+        font-size: 80px;
       }
   }
   @media only screen and (min-width: 1200px) {
@@ -259,7 +300,35 @@
         margin-top: 30%;
       }
 
+      .hero-sub {
+        padding-top: 1vw;
+        padding-left: 0vw;
+      }
+
+      .hero-image {
+        width: 20vw;
+      }
+
+      .hero-title {
+        font-size: 80px;
+      }
+
       
+  } 
+
+  @media only screen and (min-width: 1500px) {
+      .chart-container {
+        padding-left: 10vw;
+      }
+
+      .hero-sub {
+        padding-left: 7vw;
+        padding-top: 2vw;
+      }
+      
+      .hero-image {
+        width: 24vw;
+      }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
