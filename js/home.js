@@ -5,7 +5,10 @@ function screenWidth(screenWidth) {
 }
 function main(){
     var screenWidth = window.innerWidth;
-    if (screenWidth >= 1200) {
+    if (screenWidth >= 3000) {
+        zooming(2.5);
+
+    } else if (screenWidth >= 1200){
         zooming(1.5);
     } else if(screenWidth >=600) {
         zooming(10);

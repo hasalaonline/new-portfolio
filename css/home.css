@@ -84,7 +84,7 @@ header h2 {
 
 #contact-me {
     color: #016ddb;
-    padding-left: 10vw;
+    padding-left: 16vw;
     padding-top: 4px;
 }
 
@@ -397,6 +397,7 @@ header h2 {
     background-size: cover;
     background-position: center;
     width: 100%;
+    min-width: 200px;
     border-radius: 40px;
     margin-top: 10px;
   }

@@ -370,6 +370,117 @@
         font-size: 80px;
       }
 
+      header h2 {
+        margin-right: 8vw;
+        font-family: 'SFPRODISPLAYREGULAR', sans-serif;
+        font-size: 20px;
+        font-weight: 490;
+    }
+    
+    #contact-me {
+        color: #016ddb;
+        padding-left: 10vw;
+        padding-top: 4px;
+    }
+
 
 
   }
+
+  @media only screen and (min-width: 3000px) {  
+    
+    nav a {
+        text-decoration: none;
+        color: #000000a1;
+        padding: 0px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        font-size: 35px;
+    }
+    
+    nav a:hover {
+        color: #000000db;
+    }
+    
+    #contact-me {
+        color: #016ddb;
+        padding-left: 16vw;
+        padding-top: 4px;
+        font-size: 35px;
+    }
+
+    #hero {
+        background-color: #fff;
+        text-align: center;
+        padding: 3vw;
+        padding-top: 10vw;
+    }
+
+    .hero-sub {
+      padding-left: 20vw;
+      padding-top: 2vw;
+    }
+
+    .hero-image {
+      width: 24vw;
+    }
+
+    .hero-name {
+        font-size: 40px;
+    }
+
+    .hero-title {
+        font-size: 100px;
+    }
+
+    .chart-container {
+        font-size: 40px;
+      padding-left: 16vw;
+      padding-bottom: 10vw;
+      max-width: 50vw;
+    }
+
+    .about-me-grid-item {
+      text-align: left;
+    }
+
+    #about-me-description {
+      font-size: 30px;
+    }
+
+    .about-me-container h1 {
+      margin-top: 16%;
+    }
+
+    .testimonial {
+      height: 13vw;
+      
+  }
+
+  #testimonials-section-title {
+      padding: 8vw 20vw 4vw 20vw;
+      font-size: 80px;
+    }
+
+    header h2 {
+      margin-right: 8vw;
+      font-family: 'SFPRODISPLAYREGULAR', sans-serif;
+      font-size: 40px;
+      font-weight: 490;
+  }
+
+  .gradient-text-2 {
+    font-size: 60px;
+    padding-bottom: 3vw;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #589ccd, #20338e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+
+}
